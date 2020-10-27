@@ -61,7 +61,6 @@ public class VierkantTest {
     public void constructorVierkant_FiguurClass_IfisAVierkant() {
         // Arrange
         Class<Figuur> expected = Figuur.class;
-
         // Act
         Figuur result = standaardVierkant;
 
