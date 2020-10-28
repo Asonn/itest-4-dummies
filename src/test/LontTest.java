@@ -42,19 +42,6 @@ public class LontTest {
         assertThat(result, is(expected));
     }
 
-    @Test
-    public void isAan_False_IfIsUit() {
-        // Arrange
-        boolean expected = false;
-
-        // Act
-        standaardLont.doof();
-        boolean result = standaardLont.isAan();
-
-        // Assert
-        assertThat(result, is(expected));
-    }
-
 
     @Test
     public void steekAan_True_IfCalledIsAan() {
@@ -64,6 +51,19 @@ public class LontTest {
         // Arrange
        standaardLont.steekAan();
        boolean result = standaardLont.isAan();
+
+        // Assert
+        assertThat(result, is(expected));
+    }
+
+    @Test
+    public void doof_False_IfIsUit() {
+        // Arrange
+        boolean expected = false;
+
+        // Act
+        standaardLont.doof();
+        boolean result = standaardLont.isAan();
 
         // Assert
         assertThat(result, is(expected));
